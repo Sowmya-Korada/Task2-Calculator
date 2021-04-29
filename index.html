@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+    <form action="" id="myForm" name="cal">
+        <table>
+            
+            <tr>
+                <td colspan="4"><input name="display" style="width: 282px; font-size: xx-large; background-color: whitesmoke; background-image: none; color: black;"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="C" onclick="cal.display.value=' ' " style=" background-image: none;background-color: gold;font-size: x-large;color: black; width: 142px;"></td>
+                <td><input type="button" value="%" onclick="cal.display.value+='%' " style=" background-image: none; background-color: blue; font-size: x-large;"></td>
+                <td><input type="button" value="/" onclick="cal.display.value+='/' " style=" background-image: none; background-color: chartreuse; font-size: x-large;"></td>
+            </tr>
+            <tr>
+               <td> <input type="button" value="1" onclick="cal.display.value+='1' "></td>
+               <td><input type="button" value="2" onclick="cal.display.value+='2' "></td>
+               <td><input type="button" value="3" onclick="cal.display.value+='3' "></td> 
+                <td><input type="button" value="+" onclick="cal.display.value+='+' " style=" background-image: none; background-color: #72147e; font-size: x-large;"></td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="4" onclick="cal.display.value+='4' "></td>
+               <td><input type="button" value="5" onclick="cal.display.value+='5' "></td>
+               <td><input type="button" value="6" onclick="cal.display.value+='6' "></td> 
+                <td><input type="button" value="-" onclick="cal.display.value+='-' " style=" background-image: none; background-color:#f21170 ; font-size: x-large;"></td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="7" onclick="cal.display.value+='7' "></td>
+               <td><input type="button" value="8" onclick="cal.display.value+='8' "></td>
+               <td><input type="button" value="9" onclick="cal.display.value+='9' "></td> 
+                <td><input type="button" value="x" onclick="cal.display.value+='*' " style=" background-image: none; background-color: #fa9905; font-size: x-large;"></td>
+            </tr>
+            <tr>
+                
+                <td colspan="2"><input type="button" value="0" onclick="cal.display.value+='0' " style="width: 142px;"></td>
+                <td><input type="button" value="." onclick="cal.display.value+='.' " style=" background-image: none; background-color:#cf0000 ; font-size: x-large;"></td>
+                <td><input type="button" value="=" onclick="cal.display.value=eval(cal.display.value) " style=" background-image: none; background-color: green; font-size: x-large;"></td> 
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
